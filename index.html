@@ -2,12 +2,91 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <title>Buylist</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <style>
+        #inp1{
+            width: 540px;
+            height:32px;
+            border-radius: 4px;
+            border-color: #ececec;
+
+        }
+        #inp2{
+            width: 100px;
+            border: none;
+            color: black;
+        }
+        #inp3{
+            width: 100px;
+            border: none;
+            color: rgba(39, 82, 78, 0.36)
+        }
+        #inp4{
+            width: 100px;
+            border: none;
+            color: rgba(39, 82, 78, 0.36)
+        }
+    </style>
+
 </head>
-<body>
-<h1>Helplo World</h1>
+<body style="background-color:lightgray">
+<div class="tableleft">
+    <!--left table-->
+    <div class="block1">
+
+    <input type="search"id="inp1" placeholder="Назва товару" >  <!--first input-->
+    <button class="buttonfirst">Додати</button>
+
+    </div>
+    <hr>
+    <div class="block2">
+        <span><strike>Помідори</strike></span>
+        <button class = "button1" type = "button" style="background-color:white"> - </button>
+        <span class="counter">2</span>
+        <button class = "button2" type = "button" style="background-color:white"> + </button>
+        <button class = "button3" type = "button" style="background-color:white;"> x </button>
+        <button class = "button4" type = "button" style="background-color:#e9e5ea;">Не куплено </button>
+
+    </div>
+    <hr>
+    <div class="block3">
+        <input type="search"id="inp3" placeholder="Печиво" >
+        <button class = "button1" type = "button" style="background-color:#bd0c06;"> - </button>
+        <span class="counter">2</span>
+        <button class = "button2" type = "button" style="background-color:#10a736;"> + </button>
+        <button class = "button3" type = "button" style="background-color:#ff4143;"> x </button>
+        <button class = "button4" type = "button" style="background-color:#e9e5ea;"> Куплено </button>
+    </div>
+    <hr>
+    <div class="block4 ">
+        <input type="search"id="inp4" placeholder="Сир" >
+        <button class = "button1" type = "button" style="background-color:#ad0c06;"> - </button>
+        <span class="counter">1</span>
+        <button class = "button2" type = "button" style="background-color:#108e33;"> + </button>
+        <button class = "button3" type = "button" style="background-color:#ff4143;"> x </button>
+        <button class = "button4" type = "button" style="background-color:#e9e5ea;"> Куплено </button>
+
+    </div>
+</div>
+<div class="tableright">  <!--right table-->
+
+<div class="block1">
+<span style="font-family:Times New Roman;font-size:22px"><strong>Залишилося</strong></span>
+    </div>
+    <hr>
+<div class="block2">
+    <span class="select" style="background-color: #dfdfdf">Сир<button class="button5" type="button">1</button> </span>
+    <span class="select" style="background-color: #dfdfdf">Печиво<button class="button5" type="button">2</button> </span>
+</div>
+    <hr>
+<div class="block3">
+    <span style="font-family:Times New Roman;font-size:22px"><strong>Куплено</strong></span>
+    </div>
+    <hr>
+<div class="block4">
+    <span class="select" style="background-color: #dfdfdf"><strike>Помідори</strike><button class="button5" type="button">2</button> </span>
+    </div>
+    </div>
 </body>
 </html>
