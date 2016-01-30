@@ -1,33 +1,45 @@
+
 .tableleft{
     background-color: white;
     border-radius: 5px;
-    width: 680px;
+    width: 54%;
     float: left;
     padding:5px;
     position:absolute;
-    left:100px;
-    top: 80px
+    left:7%;
+    top: 10%;
+    margin:5px;
+}
+#inp1 {
+    width: 83%;
+    height: 32px;
+    border-radius: 4px;
+    border-color: #ececec;
+}
+.inp2{
+    width: 100px;
+    border: none;
+    color: black;
 }
 .counter{
     width: 30px;
     text-align: center;
     position:absolute;
-    left:290px;
+    left:45%;
     background-color: lightgrey;
+    border: none;
     padding: 5px;
     padding-right: 2px;
     padding-left: 2px;
     border-radius: 5px;
-
-
 }
 .buttonfirst{
     background-color: #2276ff;
     border-radius: 3px;
     width: 120px;
     height: 32px;
-    position:relative;
-    right:4px;
+    position:absolute;
+    right:8px;
     border:none;
     color:white;
 }
@@ -37,21 +49,23 @@
     border-radius: 100%;
     text-align:center;
     border:10px;
+    background-color: rgba(255, 121, 125, 0.5);
     color:white;
     position:relative;
-    left:210px;
+    left:35%;
+
 
 }
 .button2{
     width: 28px;
     height: 28px;
     border-radius: 100%;
-
     text-align:center;
     border:10px;
+    background-color:#10a736;
     color:white;
     position:relative;
-    left:110px;
+    left:20%;
 }
 .button3{
 
@@ -59,29 +73,38 @@
     width: 25px;
     height: 27px;
     color: white;
-border:none;
-    position:relative;
-    left:380px;
+
+    background-color:#ff4143;
+    border:none;
+    position:absolute;
+    left:95%;
 }
 .button4{
 
     border-radius: 5px;
+    text-align: center;
     width: 95px;
     height: 27px;
+    background-color:#e9e5ea;
     color: black;
     position:relative;
-    left:380px;
+    left:57%;
 }
 .button5{
+    width: 20px;
+    text-align: center;
     background-color: orange;
+    padding:2px;
     border-radius: 100%;
-    border:10px;
+    border: none;
     color:white;
-    margin:2px;
+    margin:4px;
+    font-size: 90%;
 }
 .select{
     padding:5px;
     border-radius: 5px;
+    background-color: #dfdfdf;
     color:darkslategray;
     margin:2px;
 }
@@ -89,11 +112,12 @@ border:none;
     background-color: white;
     border-radius: 5px;
     float: right;
-    width: 300px;
+    width: 25%;
     padding:5px;
     position:absolute;
-    right:150px;
-    top: 80px
+    right:10%;
+    margin:5px;
+    top: 10%;
 }
 .block1{
 height:35px ;
@@ -113,4 +137,10 @@ margin:8px;
 }
 hr{
     border: 1px solid #e6e1d5;
+}
+.nextstyle{
+    background-color:#bd0c06;
+}
+.nextstyle1{
+    background-color: rgba(255, 121, 125, 0.5);
 }
