@@ -1,4 +1,9 @@
-
+body{
+background-color: lightgray;
+}
+.crossed{
+    text-decoration: line-through;
+}
 .tableleft{
     background-color: white;
     border-radius: 5px;
@@ -36,8 +41,8 @@
 .buttonfirst{
     background-color: #2276ff;
     border-radius: 3px;
-    width: 120px;
-    height: 32px;
+    width: 118px;
+    height: 38px;
     position:absolute;
     right:8px;
     border:none;
@@ -72,8 +77,8 @@
     color: white;
     background-color:#ff4143;
     border:none;
-    position:absolute;
-    left:95%;
+    position:relative;
+    left:70%;
 }
 .button4{
 
@@ -84,7 +89,8 @@
     background-color:#e9e5ea;
     color: black;
     position:relative;
-    left:57%;
+    left:50%;
+    top:0;
 }
 .button5{
     width: 20px;
@@ -96,6 +102,17 @@
     color:white;
     margin:4px;
     font-size: 90%;
+}
+.not_buy{
+    border-radius: 5px;
+    text-align: center;
+    width: 95px;
+    height: 27px;
+    background-color:#e9e5ea;
+    color: black;
+    position:relative;
+    left:65%;
+    top:0;
 }
 .select{
     padding:5px;
@@ -134,15 +151,20 @@ hr{
 .new_product_panel{
     margin:8px;
 }
+.list {
+    height:40px;
+}
 .common {
     float: left;
     margin: 20px;
-    margin-top: 100px;
+    margin-top:7%;
+
 }
 .sidePanel {
     width: 260px;
     position: fixed;
-    right:0px;
+    right:0;
+    border-radius: 25%;
 }
 .empty {
     border: 1px solid #d7d7d7;
@@ -168,6 +190,7 @@ hr{
 }
 .invisible {
     display: none;
+
 }
 .number {
     color: white;

@@ -7,6 +7,7 @@ $(document).ready(function(){
     var ITEM_TEMPLATE=$('.new_product_panel').html();
     var LEFT_ITEMS=$('.one_article').html();
     var LEFT_LIST=$('.leftStat');
+    var LEFT_DOWN=$('.boughtStat');
 
     $('#inp1').click(function(){
         $('#inp1').val("");
@@ -54,6 +55,27 @@ node.find('.button1').click(function(){       //---
 })
     //-----------------------------------------------------------------------------------------------------
     node.find('.button4').click(function(){
+       $(this).hide();
+        $(this).parent().find('.inp2').addClass('crossed');
+        $(this).parent().find('.button1').hide();
+        $(this).parent().find('.button2').hide();
+        $(this).parent().find('.button3').hide();
+       $(this).parent().find('.not_buy').show();
+        var txt=$(this).parent().find('.inp2').val();
+        var new_node=$('.article:contains("'+txt+'")');
+       // LEFT_LIST.find(new_node).hide();
+        LEFT_DOWN.append(new_node);
+    })
+    node.find('.not_buy').click(function(){
+        $(this).parent().find('.inp2').removeClass('crossed');
+        $(this).parent().find('.button1').show();
+        $(this).parent().find('.button2').show();
+        $(this).parent().find('.button3').show();
+        $(this).parent().find('.button4').show();
+        $(this).parent().find('.not_buy').hide();
+        var txt=$(this).parent().find('.inp2').val();
+        var new_node=$('.article:contains("'+txt+'")');
+        LEFT_LIST.append(new_node);
 
     })
 }
